@@ -138,10 +138,14 @@ body {
   }
   .menu li{
       display:inline-block;
+         
+  }
+  .menu .social{
+    display: inline-block;
+    
   }
   .menu li a{
     margin-top: 1%;
-
   }
   .togle-menu{
       margin-right: 3%;
@@ -166,10 +170,10 @@ body {
       left:0;
       bottom: 0;
       height:0;
-      
+      font-size: 25px;
   }
   .open{
-      width:60%;
+      width:100%;
       height:60%;
   }
   .para{
@@ -191,7 +195,15 @@ body {
     font-size:70%;
     
   }
-
+  .menu{
+    height:2em;
+    width:100%;
+  }
+  .menu .social{
+   margin-left: 25%;
+    
+  }
+ 
   }
   @media screen and (max-height: 34em) and (max-width: 500px){
   .menu{
