@@ -4,43 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Júlio Marques | Dev Front-end </title>
+    <script src="https://kit.fontawesome.com/963d9be9b3.js" crossorigin="anonymous"></script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="src/css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="src/css/style.css">
+   
 </head>
 <body>
-    <nav>
-        <ul class="menu ">
-            <li class="togle-menu"  title="home"><a href="#" class="menu-button home">menu</a></li>
-            <div class="social">
-                <li title="Github"><a href="https://github.com/juliomarques56" target="__blank" class="github">Github</a></li>
-                <li title="Facebook"><a href="https://www.facebook.com/jota56" target="__blank" class="facebook">Facebook</a></li>
-                <li title="Linkedin"><a href="https://www.linkedin.com/in/julio-marques-2772a6b2/" target="__blank" class="linkedin ">Linkedin</a></li>
-                <li title="Intagram"><a href="https://www.instagram.com/julio_marques56/?hl=pt-br" target="__blank" class="instagram">Instagram</a></li>
-            </div>
-        </ul>
-
-        <div class="menu-bar">
-            <p onclick="document.getElementsByClassName('menu-bar')[0].className = 'menu-bar'">&lt;close/&gt;</p>
-            <ol>
-                
-                <li class="menu-item">
-                    <a class="desab" href="#0">Menu</a><span>{</span>
-                    <ol class="sub-menu">
-                        <li><a href="#0">Home;</a></li>
-                        <li><a href="sobremim.html">Sobre Mim;</a></li>
-                        <li><a href="#0">Projetos;</a></li>
-                    </ol>
-                </li>
-              
-                <span>&nbsp;&nbsp;}</span>
+    <nav class="menu">
+        <input id ="menu__toggle" type="checkbox" class='menu__toggle'/>
+        <label for="menu__toggle" class="menu__toggle-label">
+          <svg preserveAspectRatio='xMinYMin' viewBox='0 0 24 24'>
+            <path d='M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z' />
+          </svg>
+          <p>&lt;Fechar/&gt;</p>
+        </label>
+        <ol class='menu__content'>
+          <li class="menu-item">
+            <a class="disable" href="#0">Menu<span>{</span></a>
+            <ol class="sub-menu">
+              <li class="menu-item"><a href="index.html">Home;</a></li>
+              <li class="menu-item"><a href="sobremim.html">Sobre Mim;</a></li>
+              <li class="menu-item"><a href="#0">Projetos;</a></li>
             </ol>
-        </div>
+            <span>}</span>
+          </li>
+        </ol>
     </nav>
 
-    <div class="hi ">
-        <div class="ts">
+    <div class="container-conteudo ">
+        <div class="conteudo">
             <h1>Olá<span>{</span></h1> 
             <div>
                 <h2>Meu nome é Júlio Marques;</h2>
@@ -48,7 +43,17 @@
             <h1> <span>&nbsp;}</span></h1>
         </div>
     </div>
-    
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://github.com/juliomarques56" target="__blank" title="Github" class=""><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/jota56" target="__blank" title="Facebook" class="facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/julio-marques-2772a6b2/" target="__blank" title="Linkedin" class="linkedin "><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/julio_marques56/?hl=pt-br" target="__blank" title="Instagram" class="instagram"><i class="fab fa-instagram"></i></a>
+        </div> 
+    </footer>
+
+
     <script src="src/js/script.js"></script>
 </body>
 </html>

@@ -1,9 +1,3 @@
-$(document).ready(function(){
-    $(".menu-button").click(function(){
-    $(".menu-bar").toggleClass( "open" );
-    })
-    })
-
 
 function typeWhiter(element){
     const textoArray = element.innerHTML.split('');
@@ -13,5 +7,5 @@ function typeWhiter(element){
     });
 }
 
-const nome = document.querySelector('h2');
+const nome = document.querySelector('.conteudo h2');
 typeWhiter(nome);
