@@ -1,11 +1,51 @@
+const toggler = document.querySelector('.menu__toggler');
+const menu    = document.querySelector('.menu');
 
-function typeWhiter(element){
-    const textoArray = element.innerHTML.split('');
-    element.innerHTML = '';
-    textoArray.forEach((letra, i) => {
-        setTimeout(() => element.innerHTML += letra, 85 * i);
-    });
+/*
+ * Toggles on and off the 'active' class on the menu
+ * and the toggler button.
+ */
+toggler.addEventListener('click', () => {
+  toggler.classList.toggle('active');
+  menu.classList.toggle('active');
+})
+
+debounce = function(func, wait, immediate) {
+  var timeout;
+  return function() {
+    var context = this, args = arguments;
+    var later = function() {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    var callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+};
+
+(function() {
+var $target = $('.pt');
+var $offset = $(window).height() * 2/6;
+
+function animeScroll(){
+  var documentTop = $(document).scrollTop();
+  console.log(documentTop);
+  $target.each(function() {
+    var itemTop = $(this).offset().top;
+    if(documentTop > itemTop - $offset){
+      $('.anime').css({opacity: '0', transition: '0.2s'});
+    } else{
+      $('.anime').css('opacity', '1');
+    }
+
+  })
 }
 
-const nome = document.querySelector('.conteudo h2');
-typeWhiter(nome);
+animeScroll();
+
+$(document).scroll(debounce(function(){
+  animeScroll();
+}, 100));
+}());
