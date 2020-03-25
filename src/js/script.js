@@ -10,6 +10,16 @@ toggler.addEventListener('click', () => {
   menu.classList.toggle('active');
 })
 
+$('nav a').click(function(e) {
+  e.preventDefault();
+  var id = $(this).attr('href');
+    targetOffset = $(id).offset().top;
+  $('html, body').animate({
+    scrollTop: targetOffset
+  }, 500);
+  
+});
+
 debounce = function(func, wait, immediate) {
   var timeout;
   return function() {

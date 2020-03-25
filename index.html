@@ -5,35 +5,217 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Júlio Marques | Dev Front-end </title>
     <script src="https://kit.fontawesome.com/963d9be9b3.js" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
    
 </head>
 <body>
-    
-  <nav>
-    <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="sobremim.html">Sobre Mim</a>
-        <a href="projetos.html">Projetos</a>
-    
-    </div>
-    <div class="menu__toggler "><span></span></div>
-    <!-- Basic elements-->
-  </nav>
+  <header>
+    <nav>
+      <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#about">Sobre Mim</a>
+        <a href="#skill">Habilidades</a>
+        <a href="#project">Projetos</a>
+        <a href="#contact">Contato</a>
+      </div>
+      <div class="menu__toggler "><span></span></div>
+      <!-- Basic elements-->
+    </nav>
+  </header>
 
-  <div class="container-conteudo ">
-    <h2>
-      Júlio Marques
-      <span>Júlio Marques</span>
-      <span>Júlio Marques</span>
-      <span>Dev Front-end</span>
-    </h2>
-      
-  </div>
+  <main>
+    <section id="home" class=" main-info-section">
+      <div class="text">
+        <h1>
+          <span>O</span>
+          <span class="m-left">l</span>
+          <span class="m-left">á</span>
+          <span class="m-left">,</span>
+          <br>
+          <span>E</span>
+          <span class="m-left">u</span>
+          <span>S</span>
+          <span class="m-left">o</span>
+          <span class="m-left">u</span>
+          <span class="name">J</span>
+          <span class="m-left name">ú</span>
+          <span class="m-left name">l</span>
+          <span class="m-left name">i</span>
+          <span class="m-left name">o</span>
+          <span class="m-left">,</span>
+          <br>
+          <span>W</span>
+          <span class="m-left">e</span>
+          <span class="m-left">b</span>
+          <span>D</span>
+          <span class="m-left">e</span>
+          <span class="m-left">v</span>
+          <span class="m-left">e</span>
+          <span class="m-left">l</span>
+          <span class="m-left">o</span>
+          <span class="m-left">p</span>
+          <span class="m-left">e</span>
+          <span class="m-left">r</span>
+          <span class="m-left">.</span>
+        </h1>
+        <p>CSS / JavaScript / React</p>
+        <a href="#contact" class="btn-pattern top">contacte me</a>
+      </div>
+      <div class="profile-image">
+        <img src="" alt="">
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h1 class="section-title-right">Sobre mim</h1>
+      <div class="section-content  mg anime ">
+        <div class="content">
+            <h2>Olá!</h2>
+            <p>Meu nome é Júlio Marques, casado, finalizando graduação em Análise e Desenvolvimento de Sistemas. Atualmente moro em Manaus-AM, mas,
+                logo estarei mudando para Rio Grande do Sul na busca por novas oportunidades e desafios. Trabalho na área de TI desde 2013.
+            </p>
+            <p>
+                Atualmente estou trabalhando na Rapport Soluções como autônomo em modelo home office. Presto suporte aos clientes do sistema, além de configurar, testar e homologar funcionalidades novas e atuais, investigar, analisar e resolver problemas referente ao sistema.
+            </p>
+            <p>
+                Em paralelo venho estudando e praticando sobre desenvolvimento front-end. Meu objetivo é ter a oportunidade de ingressar na área de desenvolvimento.
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skill" class="skill">
+      <h1 class="section-title-left">Habilidades</h1>
+      <div class="skill-section-content ">
+        <div class="skill-content">
+           <span>HTML</span>
+           <span>CSS</span>
+           <span>JavaScript</span>
+           <span>PHP</span>
+           <span>Python</span>
+           <span>bootstrap</span>
+           <span>Git</span>
+           <span>MySQL</span>
+           <span>PostgreSQL</span>
+           <span>SQLServer</span>
+           <span>FireBird</span>
+           <span>Scrum</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="project">
+      <h1 class="section-title-right">Projetos</h1>
+      <div class="container-card container">
+          <div class="card-deck mb-4 pt">
+              <div class="card text-center">
+                <img class="card-img-top" src="img/img_mitros.png" alt="Imagem de capa do card">
+                <div class="card-body">
+                  <h5 class="card-title">Mitros Tecnologia</h5>
+                  <p class="card-text">Site deselvolvido para uma empresa de sistema de automação comercial.</p>
+                  <p class="card-text"><small class="text-muted">HTML, CSS, JQUERY E BOOTSTRAP</small></p>
+                </div>
+                <div class="container">
+                  <a href="" class="btn-pattern botton" >Acessar</a>
+                </div>
+              </div>
+
+              <div class="card text-center">
+                <img class="card-img-top" src="img/img_doe.png" alt="Imagem de capa do card">
+                <div class="card-body">
+                  <h5 class="card-title">Projeto Doe</h5>
+                  <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+                  <p class="card-text"><small class="text-muted">HTML, CSS, NodeJs, Express, NunJucks e PostgreSQL. </small></p>
+                </div>
+                <div class="container">
+                  <a href="" class="btn-pattern botton" >Acessar</a>
+                </div>
+              </div>
+
+              <div class="card text-center">
+                <img class="card-img-top" src="img/img_netflix.png" alt="Imagem de capa do card">
+                <div class="card-body">
+                  <h5 class="card-title">Tela de login Netflix</h5>
+                  <p class="card-text">Projeto recriando a tela de login da Neflix com objetivo educacional.</p>
+                  <p class="card-text"><small class="text-muted">HTML, CSS E JAVASCRIPT.</small></p>
+                </div>
+                <div class="container">
+                  <a href="" class="btn-pattern botton" >Acessar</a>
+                </div>
+              </div>
+          </div>
+
+          <div class="card-deck">
+              <div class="card text-center">
+                <img class="card-img-top" src="img/img_crud.png" alt="Imagem de capa do card">
+                <div class="card-body">
+                  <h5 class="card-title">Crud com PHP</h5>
+                  <p class="card-text">Projeto em PHP, com tela de login, niveis de usuarios, CRUD e sessões.</p>
+                  <p class="card-text"><small class="text-muted">HTML, CSS, JQUERY, BOOTSTRAP, PHP E MYSQL.</small></p>
+                </div>
+                <div class="container">
+                  <a href="" class="btn-pattern botton" >Acessar</a>
+                </div>
+              </div>
+
+              <div class="card text-center">
+                <img class="card-img-top" src="img/img_busca_empresa.png" alt="Imagem de capa do card">
+                <div class="card-body">
+                  <h5 class="card-title">Busca empresa com PHP</h5>
+                  <p class="card-text">Tela para buscar informações de empresas pelo seu CNPJ, consumindo um API para recuperar as informações e preencher os campos.</p>
+                  <p class="card-text"><small class="text-muted">HTML E PHP.</small></p>
+                </div>
+                <div class="container">
+                  <a href="" class="btn-pattern botton" >Acessar</a>
+                </div>
+              </div>
+
+              <div class="card text-center">
+                <img class="card-img-top" src="img/img_dataScience_python.png" alt="Imagem de capa do card">
+                <div class="card-body">
+                  <h5 class="card-title">Exercíco Data Science</h5>
+                  <p class="card-text">Realizar uma análise exploratória em um dos mais famosos datasets para Machine Learning, o dataset iris com informações sobre 3 tipos de plantas. O objetivo é prever a categoria de uma planta a partir de medidas da planta (sepal e petal).</p>
+                  <p class="card-text"><small class="text-muted">PYTHON NO JUPYTER NOTEBOOK.</small></p>
+                </div>
+                <div class="container">
+                  <a href="" class="btn-pattern botton" >Acessar</a>
+                </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h1 class="section-title-left">Contato</h1>
+      <div class="contact-section-content ">
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control" id="name" placeholder="Nome">
+          </div>
+          <div class="form-group">
+            <input type="tel" class="form-control" id="phone" placeholder="Telefone">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" id="email" placeholder="E-mail">
+          </div>
+          
+          <div class="form-group">
+            <textarea class="form-control" id="message" name="message" placeholder="Digite sua mensagem" rows="6"></textarea>
+          </div>
+          <div class="form-btn">
+            <button type="submit" class="btn-pattern">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+
   <footer class="footer">
       <div class="social">
           <a href="https://github.com/juliomarques56" target="__blank" title="Github" class=""><i class="fab fa-github"></i></a>
@@ -44,6 +226,6 @@
   </footer>
 
 
-  <script src="src/js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
