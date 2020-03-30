@@ -24,12 +24,11 @@
         <a href="#contact">Contato</a>
       </div>
       <div class="menu__toggler "><span></span></div>
-      <!-- Basic elements-->
     </nav>
   </header>
 
   <main>
-    <section id="home" class=" main-info-section">
+    <div id="home" class=" home-container">
       <div class="text">
         <h1>
           <span>O</span>
@@ -64,17 +63,17 @@
           <span class="m-left">.</span>
         </h1>
         <p>CSS / JavaScript / React</p>
-        <a href="#contact" class="btn-pattern top">contacte me</a>
+        <a href="#contact" class="btn-pattern top">contate me</a>
       </div>
       <div class="profile-image">
         <img src="" alt="">
       </div>
-    </section>
+    </div>
 
-    <section id="about" class="about">
+    <div id="about" class="about-container">
       <h1 class="section-title-right">Sobre mim</h1>
       <div class="section-content  mg anime ">
-        <div class="content">
+        <section class="about-content">
             <h2>Olá!</h2>
             <p>Meu nome é Júlio Marques, casado, finalizando graduação em Análise e Desenvolvimento de Sistemas. Atualmente moro em Manaus-AM, mas,
                 logo estarei mudando para Rio Grande do Sul na busca por novas oportunidades e desafios. Trabalho na área de TI desde 2013.
@@ -85,14 +84,14 @@
             <p>
                 Em paralelo venho estudando e praticando sobre desenvolvimento front-end. Meu objetivo é ter a oportunidade de ingressar na área de desenvolvimento.
             </p>
-        </div>
+        </section>
       </div>
-    </section>
+    </div>
 
-    <section id="skill" class="skill">
+    <div id="skill" class="skill-container">
       <h1 class="section-title-left">Habilidades</h1>
-      <div class="skill-section-content ">
-        <div class="skill-content">
+      <div class="skill-section">
+        <section class="skill-content">
            <span>HTML</span>
            <span>CSS</span>
            <span>JavaScript</span>
@@ -105,14 +104,14 @@
            <span>SQLServer</span>
            <span>FireBird</span>
            <span>Scrum</span>
-        </div>
+        </section>
       </div>
-    </section>
+    </div>
 
-    <section id="project">
+    <div id="project" class="container project">
       <h1 class="section-title-right">Projetos</h1>
-      <div class="container-card container">
-          <div class="card-deck mb-4 pt">
+      <div class="section.project">
+          <section class="card-deck mb-4 pt">
               <div class="card text-center">
                 <img class="card-img-top" src="img/img_mitros.png" alt="Imagem de capa do card">
                 <div class="card-body">
@@ -120,7 +119,7 @@
                   <p class="card-text">Site deselvolvido para uma empresa de sistema de automação comercial.</p>
                   <p class="card-text"><small class="text-muted">HTML, CSS, JQUERY E BOOTSTRAP</small></p>
                 </div>
-                <div class="container">
+                <div>
                   <a href="" class="btn-pattern botton" >Acessar</a>
                 </div>
               </div>
@@ -132,7 +131,7 @@
                   <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
                   <p class="card-text"><small class="text-muted">HTML, CSS, NodeJs, Express, NunJucks e PostgreSQL. </small></p>
                 </div>
-                <div class="container">
+                <div>
                   <a href="" class="btn-pattern botton" >Acessar</a>
                 </div>
               </div>
@@ -144,13 +143,13 @@
                   <p class="card-text">Projeto recriando a tela de login da Neflix com objetivo educacional.</p>
                   <p class="card-text"><small class="text-muted">HTML, CSS E JAVASCRIPT.</small></p>
                 </div>
-                <div class="container">
+                <div>
                   <a href="" class="btn-pattern botton" >Acessar</a>
                 </div>
               </div>
-          </div>
+          </section>
 
-          <div class="card-deck">
+          <section class="card-deck">
               <div class="card text-center">
                 <img class="card-img-top" src="img/img_crud.png" alt="Imagem de capa do card">
                 <div class="card-body">
@@ -158,7 +157,7 @@
                   <p class="card-text">Projeto em PHP, com tela de login, niveis de usuarios, CRUD e sessões.</p>
                   <p class="card-text"><small class="text-muted">HTML, CSS, JQUERY, BOOTSTRAP, PHP E MYSQL.</small></p>
                 </div>
-                <div class="container">
+                <div>
                   <a href="" class="btn-pattern botton" >Acessar</a>
                 </div>
               </div>
@@ -170,7 +169,7 @@
                   <p class="card-text">Tela para buscar informações de empresas pelo seu CNPJ, consumindo um API para recuperar as informações e preencher os campos.</p>
                   <p class="card-text"><small class="text-muted">HTML E PHP.</small></p>
                 </div>
-                <div class="container">
+                <div>
                   <a href="" class="btn-pattern botton" >Acessar</a>
                 </div>
               </div>
@@ -182,17 +181,17 @@
                   <p class="card-text">Realizar uma análise exploratória em um dos mais famosos datasets para Machine Learning, o dataset iris com informações sobre 3 tipos de plantas. O objetivo é prever a categoria de uma planta a partir de medidas da planta (sepal e petal).</p>
                   <p class="card-text"><small class="text-muted">PYTHON NO JUPYTER NOTEBOOK.</small></p>
                 </div>
-                <div class="container">
+                <div>
                   <a href="" class="btn-pattern botton" >Acessar</a>
                 </div>
               </div>
-          </div>
+          </section>
       </div>
-    </section>
+    </div>
 
-    <section id="contact" class="contact">
+    <div id="contact" class="contact-container">
       <h1 class="section-title-left">Contato</h1>
-      <div class="contact-section-content ">
+      <section class="form">
         <form>
           <div class="form-group">
             <input type="text" class="form-control" id="name" placeholder="Nome">
@@ -211,18 +210,18 @@
             <button type="submit" class="btn-pattern">Enviar</button>
           </div>
         </form>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
 
-  <footer class="footer">
-      <div class="social">
+  <footer class="footer-container">
+      <section class="social">
           <a href="https://github.com/juliomarques56" target="__blank" title="Github" class=""><i class="fab fa-github"></i></a>
           <a href="https://www.facebook.com/jota56" target="__blank" title="Facebook" class="facebook"><i class="fab fa-facebook"></i></a>
           <a href="https://www.linkedin.com/in/julio-marques-2772a6b2/" target="__blank" title="Linkedin" class="linkedin "><i class="fab fa-linkedin-in"></i></a>
           <a href="https://www.instagram.com/julio_marques56/?hl=pt-br" target="__blank" title="Instagram" class="instagram"><i class="fab fa-instagram"></i></a>
-      </div> 
+      </section> 
   </footer>
 
 
