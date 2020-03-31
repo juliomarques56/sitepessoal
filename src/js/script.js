@@ -1,5 +1,6 @@
 const toggler = document.querySelector('.menu__toggler');
 const menu    = document.querySelector('.menu');
+//const link    = document.querySelectorAll('.link')
 
 /*
  * Toggles on and off the 'active' class on the menu
@@ -10,13 +11,25 @@ toggler.addEventListener('click', () => {
   menu.classList.toggle('active');
 })
 
+$(function(){ 
+  var navMain = $(".menu");
+
+  navMain.on("click", "a", null, function () {
+    toggler.classList.toggle('active');
+    menu.classList.toggle('active');
+  });
+});
+
+
+
+
 $('nav a').click(function(e) {
   e.preventDefault();
   var id = $(this).attr('href');
     targetOffset = $(id).offset().top;
   $('html, body').animate({
     scrollTop: targetOffset
-  }, 500);
+  }, 600);
   
 });
 

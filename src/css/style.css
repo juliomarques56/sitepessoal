@@ -3,8 +3,6 @@
   src: url(../fonts/lineto-circular-pro-medium.ttf);
 }
 
-@import url("https://fonts.googleapis.com/css?family=K2D");
-
  /*
   * INICIO GLOBAL
   */
@@ -20,7 +18,8 @@ body{
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  font-family: Circular-medium-S, sans-serif;
+  
+  font-family: Roboto, sans-serif;
   background:#1d2225;  
   color: #ffffff;
 }
@@ -31,14 +30,15 @@ body{
 }
 
 .section-title-right {
+  font-family: Circular-medium-S, sans-serif;
   padding: 20px 0 0 65px;
   font-size: 6rem;
   opacity: .1;
 }
 
 .section-title-left{
-  padding-left: 52.5%;
-  padding-right: 20%;
+  font-family: Circular-medium-S, sans-serif;
+  padding: 20px 0 0 52.5%;
   font-size: 6rem;
   opacity: .1;
 }
@@ -145,7 +145,7 @@ nav .menu__toggler {
   display: -webkit-box;
   -webkit-box-align: center;
           align-items: center;
-position: fixed;
+  position: fixed;
 }
 
 nav .menu__toggler span,
@@ -198,7 +198,7 @@ nav .menu__toggler.active > span::after {
   */
 
  .home-container {
-  height: calc(100vh - 81.6px);
+  height: 100vh
 }
 
 .home-container .text {
@@ -254,10 +254,10 @@ nav .menu__toggler.active > span::after {
  * ::::::::::: INICIO SOBRE MIM :::::::::::
  */
 
+
 .about-container{
   width: 100%;
   height: 100%;
-  padding-bottom: 30px;
 }
 
 .about-container .section-content{
@@ -267,7 +267,6 @@ nav .menu__toggler.active > span::after {
 .mg{
   max-width: 900px;
   margin: 30px auto;
-  margin-bottom: 60px;
   padding: 20px;
   background-color: #21272b;
 }
@@ -293,10 +292,8 @@ nav .menu__toggler.active > span::after {
  */
 
 .skill-container{
-  margin-top: 40px;
-
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .skill-section {
@@ -328,7 +325,10 @@ nav .menu__toggler.active > span::after {
 /*
  * ::::::::::: INICIO PROJETOS :::::::::::
  */
-
+.project {
+  height: 100%;
+  margin-bottom: 20px;
+}
 .project .section-project {
   margin-top: 30px;
 }
@@ -355,9 +355,8 @@ nav .menu__toggler.active > span::after {
  */
 
 .contact-container{
-  margin-top: 40px;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .contact-container section.form{
@@ -367,6 +366,14 @@ nav .menu__toggler.active > span::after {
   padding: 20px;
   background-color: #21272b;
 }
+
+.contact-container section.form input:focus,
+.contact-container section.form textarea:focus {
+  box-shadow: 0px 0px 5px 1px rgba(72,207,173,1);
+  background-color: #21272b;
+  color: #fff;
+  outline: 0;
+} 
 
 .form-control{
   background-color: transparent;  
@@ -431,7 +438,7 @@ nav .menu__toggler.active > span::after {
   .menu {
     width: 250px;
     left: -250px;
-    padding: 50px;
+    padding: 0 0 133px 50px;
   }
 }
 
