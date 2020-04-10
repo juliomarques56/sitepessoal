@@ -46,7 +46,7 @@ body{
 .btn-pattern {
   padding: 12px 25px;
   background-color: none;
-  border: 3px solid #ED5565;
+  border: 3px solid #E4BB23;
   color: #CD5565;
   font-size: .8rem;
   letter-spacing: 7px;
@@ -62,7 +62,7 @@ body{
 
 .btn-pattern::before {
   content: '';
-  background-color: #ED5565;
+  background-color: #E4BB23;
   position: absolute;
   left: 0;
   top: 0;
@@ -197,8 +197,16 @@ nav .menu__toggler.active > span::after {
   * INICIO HOME
   */
 
+.home {
+  height: 100vh;
+  
+}
  .home-container {
-  height: 100vh
+  margin: 0 auto;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .home-container .text {
@@ -237,13 +245,19 @@ nav .menu__toggler.active > span::after {
   color: #677279;
 }
 
-.top {
-  top: 80px;
-}
 
+.profile-image {
+  margin-top: 120px;
+  border-radius: 100%;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+	width: 290px;
+	height: 290px;
+  overflow: hidden;
+  
+}
 .profile-image img {
-  width: 450px;
-  margin-top: 50px;
+  width: 100%;
+  height: auto;
 }
 
  /*
@@ -337,14 +351,74 @@ nav .menu__toggler.active > span::after {
   font-size: 14px;
 }
 
+.card-text .text-footer {
+  color: #E4BB23;
+}
+
 .card{
   background-color: #21272b;
-  border: 1px solid #48CFAD;
+  border: 1px solid rgba(255, 255, 255, 0.253);
   padding: 5px;
   text-decoration: none;
   text-transform: none;
+  border-radius: 8px;
+}
+.movie-poster-info {
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.651);
+	display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	padding: 80px 20px;
+	text-align: center;
+	top: 0;
+	z-index: 1;
+	visibility: hidden;
+	transition: all 0.2s ease-in-out;
 }
 
+.card:hover .movie-poster-info {
+	opacity: 1;
+	visibility: visible;
+}
+
+.movie-poster-info h3 {
+	color: #e4bb23;
+	font-size: 1.7em;
+	line-height: 1em;
+}
+
+
+.movie-poster-info .card-btn-pattern,
+.form-btn .card-btn-pattern {
+  padding: 12px 25px;
+  background-color: #E4BB23;
+  color: #fff;
+  font-size: .8rem;
+  letter-spacing: 7px;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  transition: .5s;
+  display: inline-block;
+}
+
+.card-btn-pattern:hover {
+	background-color: #bc9a1d;
+}
+
+.card-btn-pattern i {
+	position: absolute;
+	font-size: 1.5em;
+	top: 12px;
+	right: 0px;
+}
 /*
  * ::::::::::: FIM PROJETOS :::::::::::
  */
@@ -380,10 +454,10 @@ nav .menu__toggler.active > span::after {
   border: 2px solid #48CFAD;
 }
 
-.form-btn .btn-pattern {
-  background-color: transparent;
+.form-btn .card-btn-pattern {
   width: 100%;
   cursor: pointer;
+  border: none;
 }
 
 /*
@@ -434,16 +508,35 @@ nav .menu__toggler.active > span::after {
  * ::::::::::: FIM FOOTER :::::::::::
  */
 
- @media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 800px) {
   .menu {
     width: 250px;
     left: -250px;
     padding: 0 0 133px 50px;
   }
+  .home-container {
+    flex-direction: column-reverse;
+  }
 }
 
 @media all and (max-width: 568px) {
  
+  .home {
+    height: auto;
+  }
+  .home-container .text {
+    padding: 0;
+  }
+  .home-container .text h1 {
+    font-size: 2.4em;
+  }
+ 
+  .profile-image {
+    width: 60%;
+    height: 60%;
+    margin: 90px auto 0;
+    
+  }
   .section-title-right,
   .section-title-left {
     
