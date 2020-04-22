@@ -18,15 +18,10 @@ body{
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  
+  position: relative;
   font-family: Roboto, sans-serif;
   background:#1d2225;  
   color: #ffffff;
-}
-
-.main{
-  padding: 0;
-  margin: 0;
 }
 
 .section-title-right {
@@ -38,42 +33,25 @@ body{
 
 .section-title-left{
   font-family: Circular-medium-S, sans-serif;
-  padding: 20px 0 0 52.5%;
+  padding: 20px 0 0 60%;
   font-size: 6rem;
   opacity: .1;
 }
 
-.btn-pattern {
+.text .btn-pattern {
   padding: 12px 25px;
-  background-color: none;
-  border: 3px solid #E4BB23;
-  color: #CD5565;
-  font-size: .8rem;
-  letter-spacing: 7px;
-  position: relative;
-  overflow: hidden;
-  transition: .5s;
+  background: #ff9902;
+  border: 1px solid #ff9902;
+  border-radius: 5px;
+  color: #fff;
+  font-size: .9rem;
+  letter-spacing: 5px;
+  transition: .2s;
   display: inline-block;
 }
 
 .btn-pattern:hover {
-  color: #fff;
-}
-
-.btn-pattern::before {
-  content: '';
-  background-color: #E4BB23;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 0%;
-  z-index: -1;
-  transition: .5s;
-}
-
-.btn-pattern:hover::before {
-  height: 100%;
+  background: #eb8d02;
 }
 
 .botton {
@@ -174,7 +152,7 @@ nav .menu__toggler.active > span {
 }
 
 nav .menu__toggler.active > span::before, .menu__toggler.active > span::after {
-  background: #48CFAD;
+  background: #fff;
   top: 0px;
 }
 
@@ -201,6 +179,7 @@ nav .menu__toggler.active > span::after {
   height: 100vh;
   
 }
+
  .home-container {
   margin: 0 auto;
   width: 90vw;
@@ -215,27 +194,16 @@ nav .menu__toggler.active > span::after {
 }
 
 .home-container .text h1 {
-  color: #fff;
+  color: rgb(228, 228, 228);
   font-size: 3rem;
-  cursor: context-menu;
 }
 
 .home-container .text span {
   display: inline-block;
 }
 
-
-.home-container .text span:hover {
-  color: #48CFAD;
-  transition: all .5s;
-}
-
-.home-container .text span.name {
-  color: #ED5565;
-}
-
-.home-container .text span.m-left {
-  margin-left: -10px;
+.text a {
+  text-decoration: none;
 }
 
 .home-container .text p {
@@ -244,7 +212,6 @@ nav .menu__toggler.active > span::after {
   font-size: .8rem;
   color: #677279;
 }
-
 
 .profile-image {
   margin-top: 120px;
@@ -290,10 +257,13 @@ nav .menu__toggler.active > span::after {
   text-align: justify;
 }
 
-.about-container div.section-content section.about-content p{
+.about-content h2 {
+  color: rgb(228, 228, 228);
+}
+.about-content p{
   margin: 0 0 24px;
-  font-size: 16px;
-  color: #fff;
+  font-size: 1.1rem;
+  color: rgb(228, 228, 228);
 }
 
 /*
@@ -307,13 +277,16 @@ nav .menu__toggler.active > span::after {
 
 .skill-container{
   width: 100%;
-  height: 100%;
+  padding: 20px;
 }
 
 .skill-section {
-  max-width: 600px;
+  max-width: 800px;
   margin: 30px auto;
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: #21272b;
 }
 .skill-content{
@@ -322,14 +295,28 @@ nav .menu__toggler.active > span::after {
   font-size: 1.2em;
   text-align: justify;
 }
-.skill-content span {
-  padding: 12px 25px;
-  border: 2px solid #48CFAD;
-  color: #ffffff;
-  font-size: .8rem;
-  letter-spacing: 7px;
-  overflow: hidden;
-  display: inline-block;
+
+.tag {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.tag span {
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  background: #ff9902;
+  border: 1px solid #ff9902;
+  border-radius: 5px;
+  color: #000;
+  font-size: .9rem;
+  font-weight: bold;
+  
+  
 }
 
 /*
@@ -347,12 +334,19 @@ nav .menu__toggler.active > span::after {
   margin-top: 30px;
 }
 
+.card-title,
 .card-text {
-  font-size: 14px;
+  color: rgb(228, 228, 228);
+}
+
+.card-text {
+  font-size: .9rem;
 }
 
 .card-text .text-footer {
-  color: #E4BB23;
+  color: #ff9902;
+  font-size: .6rem;
+  font-weight: bold;
 }
 
 .card{
@@ -378,7 +372,7 @@ nav .menu__toggler.active > span::after {
 	padding: 80px 20px;
 	text-align: center;
 	top: 0;
-	z-index: 1;
+	z-index: 0;
 	visibility: hidden;
 	transition: all 0.2s ease-in-out;
 }
@@ -389,7 +383,7 @@ nav .menu__toggler.active > span::after {
 }
 
 .movie-poster-info h3 {
-	color: #e4bb23;
+	color: #fff;
 	font-size: 1.7em;
 	line-height: 1em;
 }
@@ -398,19 +392,20 @@ nav .menu__toggler.active > span::after {
 .movie-poster-info .card-btn-pattern,
 .form-btn .card-btn-pattern {
   padding: 12px 25px;
-  background-color: #E4BB23;
+  background: #ff9902;
   color: #fff;
-  font-size: .8rem;
-  letter-spacing: 7px;
+  font-size: .9rem;
+  border-radius: 5px;
+  letter-spacing: 5px;
   position: relative;
   overflow: hidden;
+  transition: .2s;
   text-decoration: none;
-  transition: .5s;
   display: inline-block;
 }
 
 .card-btn-pattern:hover {
-	background-color: #bc9a1d;
+	background: #eb8d02;
 }
 
 .card-btn-pattern i {
@@ -443,7 +438,8 @@ nav .menu__toggler.active > span::after {
 
 .contact-container section.form input:focus,
 .contact-container section.form textarea:focus {
-  box-shadow: 0px 0px 5px 1px rgba(72,207,173,1);
+  box-shadow: 0px 0px 5px 1px #585652;
+  border-color:rgba(228, 228, 228, 0.774);
   background-color: #21272b;
   color: #fff;
   outline: 0;
@@ -451,7 +447,8 @@ nav .menu__toggler.active > span::after {
 
 .form-control{
   background-color: transparent;  
-  border: 2px solid #48CFAD;
+  border: 2px solid #fff;
+  border-radius: 5px;
 }
 
 .form-btn .card-btn-pattern {
@@ -465,6 +462,20 @@ nav .menu__toggler.active > span::after {
  */
 
 
+ .backtop {
+   width: 30px;
+   height: 30px;
+   position: fixed;
+   bottom: 13%;
+   right: 1%;
+   cursor: pointer;
+ }
+
+ .backtop i {
+   font-size: 1.6rem;
+   color: #eb8d02;
+ }
+
 /*
  * ::::::::::: INICIO FOOTER :::::::::::
  */
@@ -475,13 +486,12 @@ nav .menu__toggler.active > span::after {
   position: fixed;
   width: 100%;
   bottom: 0;
-  left: 0;
-  z-index: 1000;
 }
 
 .footer-container .social{
   width: 208px;
   margin: auto;
+  display: flex;
 }
 
 .footer-container section.social a{
@@ -495,8 +505,8 @@ nav .menu__toggler.active > span::after {
 }
 
 .footer-container section.social a:hover{
-  color: #48CFAD;
-  transition: 0.5s;
+  color: #fff;
+  transition: 0.2s;
 }
 
 .footer-container section.social a i{
@@ -544,10 +554,14 @@ nav .menu__toggler.active > span::after {
     
   }
   .section-title-left {
-    padding-left: 20%;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
   }
   .section-title-right {
-    padding-left: 5%;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
   }
 }
 
