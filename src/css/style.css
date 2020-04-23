@@ -24,6 +24,11 @@ body{
   color: #ffffff;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .section-title-right {
   font-family: Circular-medium-S, sans-serif;
   padding: 20px 0 0 65px;
@@ -480,21 +485,22 @@ nav .menu__toggler.active > span::after {
  * ::::::::::: INICIO FOOTER :::::::::::
  */
 
-.footer-container{
+.social-container{
   padding: 0 24px;
   background-color:#21272b;
-  position: fixed;
-  width: 100%;
+  position: sticky;
   bottom: 0;
+  width: 100%;
+  
 }
 
-.footer-container .social{
+.social-container .social{
   width: 208px;
   margin: auto;
   display: flex;
 }
 
-.footer-container section.social a{
+.social-container section.social a{
   padding: 0 16px;
   width: 52px;
   height: 40px;
@@ -504,14 +510,28 @@ nav .menu__toggler.active > span::after {
   transition: 0.5s;
 }
 
-.footer-container section.social a:hover{
+.social-container section.social a:hover{
   color: #fff;
   transition: 0.2s;
 }
 
-.footer-container section.social a i{
+.social-container section.social a i{
   font-size: 1.3em;
   padding-top: 12px; 
+}
+
+.footer-container {
+  border-top: 1px solid #ff9902;
+  padding: 10px 24px;
+  position: relative;
+  background-color:#21272b;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+.footer-container p {
+  font-size: .8rem;
 }
 
 /*
