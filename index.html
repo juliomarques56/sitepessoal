@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Júlio Marques | Dev Front-end </title>
+
     <script src="https://kit.fontawesome.com/963d9be9b3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="src/css/bootstrap.css">
-    <link rel="stylesheet" href="src/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/bootstrap.css">
+    <link rel="stylesheet" href="src/css/style.css">
     
-   
 </head>
+
 <body>
   <header>
     <nav>
       <div class="menu">
-        <a class="link" href="#home">Home</a>
-        <a class="link" href="#about">Sobre Mim</a>
-        <a class="link" href="#skill">Habilidades</a>
-        <a class="link" href="#project">Projetos</a>
-        <a class="link" href="#contact">Contato</a>
+        <a class="menu__link" href="#home">Home</a>
+        <a class="menu__link" href="#about">Sobre Mim</a>
+        <a class="menu__link" href="#skill">Habilidades</a>
+        <a class="menu__link" href="#project">Projetos</a>
+        <a class="menu__link" href="#contact">Contato</a>
       </div>
       <div class="menu__toggler "><span></span></div>
     </nav>
@@ -28,8 +31,8 @@
 
   <main>
     <div id="home" class="home">
-      <div class="home-container">
-        <div class="text">
+      <div class="home__container">
+        <div class="home__text">
           <h1>
             <span>Olá!</span>
             <br>
@@ -40,46 +43,44 @@
           <p>CSS / JavaScript / React</p>
           <a href="#contact" class="btn-pattern">contate me</a>
         </div>
-        <div class="profile-image">
+        <div class="home__profileImage">
           <img src="img/photo_perfil1.jpg" alt="">
         </div>
       </div>
     </div>
 
-    <div id="about" class="about-container">
-      <h1 class="section-title-right">Sobre mim</h1>
-      <div class="section-content  mg anime ">
-        <section class="about-content">
-            <h2>Olá!</h2>
-            <p>Meu nome é Júlio Marques, casado, finalizando graduação em Análise e Desenvolvimento de Sistemas. Atualmente moro em Manaus-AM, mas,
-                logo estarei mudando para Rio Grande do Sul na busca por novas oportunidades e desafios. Trabalho na área de TI desde 2013.
-            </p>
-            <p>
-                Atualmente estou trabalhando na Rapport Soluções como autônomo em modelo home office. Presto suporte aos clientes do sistema, além de configurar, testar e homologar funcionalidades novas e atuais, investigar, analisar e resolver problemas referente ao sistema.
-            </p>
-            <p>
-                Em paralelo venho estudando e praticando sobre desenvolvimento front-end. Meu objetivo é ter a oportunidade de ingressar na área de desenvolvimento.
-            </p>
-        </section>
+    <div id="about" class="about__container">
+      <h1 class="section__title--right">Sobre mim</h1>
+      <div class="about__content">
+        <h2>Olá!</h2>
+        <p>Meu nome é Júlio Marques, casado, finalizando graduação em Análise e Desenvolvimento de Sistemas. Atualmente moro em Manaus-AM, mas,
+            logo estarei mudando para Rio Grande do Sul na busca por novas oportunidades e desafios. Trabalho na área de TI desde 2013.
+        </p>
+        <p>
+            Atualmente estou trabalhando na Rapport Soluções como autônomo em modelo home office. Presto suporte aos clientes do sistema, além de configurar, testar e homologar funcionalidades novas e atuais, investigar, analisar e resolver problemas referente ao sistema.
+        </p>
+        <p>
+            Em paralelo venho estudando e praticando sobre desenvolvimento front-end. Meu objetivo é ter a oportunidade de ingressar na área de desenvolvimento.
+        </p>
       </div>
     </div>
 
-    <div id="skill" class="skill-container">
-      <h1 class="section-title-left">Skills</h1>
-      <div class="skill-section">
-        <div class="tag">
+    <div id="skill" class="skill__container">
+      <h1 class="section__title--left">Skills</h1>
+      <div class="skill__section">
+        <div class="skill__tag">
           <span>HTML</span>
           <span>CSS</span>
           <span>JavaScript</span>
           <span>PHP</span>
         </div>
-        <div class="tag">
+        <div class="skill__tag">
           <span>Python</span>
           <span>bootstrap</span>
           <span>Git</span>
           <span>MySQL</span>
         </div>
-        <div class="tag">
+        <div class="skill__tag">
           <span>PostgreSQL</span>
           <span>SQLServer</span>
           <span>FireBird</span>
@@ -88,123 +89,121 @@
       </div>
     </div>
 
-    <div id="project" class="container project">
-      <h1 class="section-title-right">Projetos</h1>
-      <div class="section-project">
-          <section class="card-deck mb-4">
-              <div class="card text-center">
-                <img class="card-img-top" src="img/img_mitros.png" alt="Mitros Tecnologia">
-                <div class="card-body">
-                  <h5 class="card-title">Mitros Tecnologia</h5>
-                  <p class="card-text">Site deselvolvido para uma empresa de sistema de automação comercial.</p>
-                  <p class="card-text"><small class="text-footer">HTML, CSS, JQUERY E BOOTSTRAP</small></p>
-                </div>
-                <div class="movie-poster-info">
-                  <h3>Repositório</h3>
-                  <a href="https://github.com/juliomarques56/maratonaDev-projetoDoeSangue" target="__blank" class="card-btn-pattern"><i class="fab fa-github" aria-hidden="true"></i>Acessar</a>
-                </div>
-              </div>
+    <div id="project" class="project__container">
+      <h1 class="section__title--right">Projetos</h1>
+      <div class="project__section">
+        <section class="card-deck ">
+          <div class="card text-center">
+            <img class="card-img-top" src="img/img_mitros.png" alt="Mitros Tecnologia">
+            <div class="card-body">
+              <h5 class="card-title">Mitros Tecnologia</h5>
+              <p class="card-text">Site deselvolvido para uma empresa de sistema de automação comercial.</p>
+              <p class="card-text"><small class="text-footer">HTML, CSS, JQUERY E BOOTSTRAP</small></p>
+            </div>
+            <div class="card__link">
+              <h3>Repositório</h3>
+              <a href="https://github.com/juliomarques56/maratonaDev-projetoDoeSangue" target="__blank" class="btn__pattern"><i class="fab fa-github" aria-hidden="true"></i>Acessar</a>
+            </div>
+          </div>
 
-              <div class="card text-center">
-                <img class="card-img-top" src="img/img_doe.png" alt="Projeto Doe">
-                <div class="card-body">
-                  <h5 class="card-title">Projeto Doe</h5>
-                  <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
-                  <p class="card-text"><small class="text-footer">HTML, CSS, NODEJS, EXPRESS, NUMJUCKS e POSTGRESQL</small></p>
-                </div>
-                <div class="movie-poster-info">
-                  <h3>Repositório</h3>
-                  <a href="https://github.com/juliomarques56/maratonaDev-projetoDoeSangue" target="__blank" class="card-btn-pattern"><i class="fab fa-github" aria-hidden="true"></i>Acessar</a>
-                </div>
-              </div>
+          <div class="card text-center">
+            <img class="card-img-top" src="img/img_doe.png" alt="Projeto Doe">
+            <div class="card-body">
+              <h5 class="card-title">Projeto Doe</h5>
+              <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+              <p class="card-text"><small class="text-footer">HTML, CSS, NODEJS, EXPRESS, NUMJUCKS e POSTGRESQL</small></p>
+            </div>
+            <div class="card__link">
+              <h3>Repositório</h3>
+              <a href="https://github.com/juliomarques56/maratonaDev-projetoDoeSangue" target="__blank" class="btn__pattern"><i class="fab fa-github" aria-hidden="true"></i>Acessar</a>
+            </div>
+          </div>
 
-              <div class="card text-center">
-                <img class="card-img-top" src="img/img_netflix.png" alt="Tela de login Netflix">
-                <div class="card-body">
-                  <h5 class="card-title">Tela de login Netflix</h5>
-                  <p class="card-text">Projeto recriando a tela de login da Neflix com objetivo educacional.</p>
-                  <p class="card-text"><small class="text-footer">HTML, CSS E JAVASCRIPT</small></p>
-                </div>
-                <div class="movie-poster-info">
-                  <h3>Repositório</h3>
-                  <a href="https://github.com/juliomarques56/Telas-login" target="__blank" class="card-btn-pattern"><i class="fab fa-github" aria-hidden="true"></i>Acessar</a>
-                </div>
-              </div>
-              <div class="card text-center">
-                <img class="card-img-top" src="img/img_netflix.png" alt="Tela de login Netflix">
-                <div class="card-body">
-                  <h5 class="card-title">Tela de login Netflix</h5>
-                  <p class="card-text">Projeto recriando a tela de login da Neflix com objetivo educacional.</p>
-                  <p class="card-text"><small class="text-footer">HTML, CSS E JAVASCRIPT</small></p>
-                </div>
-                <div class="movie-poster-info">
-                  <h3>Repositório</h3>
-                  <a href="https://github.com/juliomarques56/maratonaDev-projetoDoeSangue" target="__blank" class="card-btn-pattern"><i class="fab fa-github" aria-hidden="true"></i>Acessar</a>
-                </div>
-              </div>
-          </section>
+          <div class="card text-center">
+            <img class="card-img-top" src="img/img_netflix.png" alt="Tela de login Netflix">
+            <div class="card-body">
+              <h5 class="card-title">Tela de login Netflix</h5>
+              <p class="card-text">Projeto recriando a tela de login da Neflix com objetivo educacional.</p>
+              <p class="card-text"><small class="text-footer">HTML, CSS E JAVASCRIPT</small></p>
+            </div>
+            <div class="card__link">
+              <h3>Repositório</h3>
+              <a href="https://github.com/juliomarques56/Telas-login" target="__blank" class="btn__pattern"><i class="fab fa-github" aria-hidden="true"></i>Acessar</a>
+            </div>
+          </div>
+          
+          <div class="card text-center">
+            <img class="card-img-top" src="img/img_netflix.png" alt="Tela de login Netflix">
+            <div class="card-body">
+              <h5 class="card-title">Tela de login Netflix</h5>
+              <p class="card-text">Projeto recriando a tela de login da Neflix com objetivo educacional.</p>
+              <p class="card-text"><small class="text-footer">HTML, CSS E JAVASCRIPT</small></p>
+            </div>
+            <div class="card__link">
+              <h3>Repositório</h3>
+              <a href="https://github.com/juliomarques56/maratonaDev-projetoDoeSangue" target="__blank" class="btn__pattern"><i class="fab fa-github" aria-hidden="true"></i>Acessar</a>
+            </div>
+          </div>
+        </section>
 
-          <section class="card-deck">
-              <div class="card text-center">
-                <img class="card-img-top" src="img/img_crud.png" alt="Imagem de capa do card">
-                <div class="card-body">
-                  <h5 class="card-title">Crud com PHP</h5>
-                  <p class="card-text">Projeto em PHP, com tela de login, niveis de usuarios, CRUD e sessões.</p>
-                  <p class="card-text"><small class="text-footer">HTML, CSS, JQUERY, BOOTSTRAP, PHP E MYSQL</small></p>
-                </div>
-                <div class="movie-poster-info">
-                  <h3>Repositório</h3>
-                  <a href="https://github.com/juliomarques56/crud-php" target="__blank" class="card-btn-pattern"><i class="fab fa-github" aria-hidden="true"></i>Acessar</a>
-                </div>
-              </div>
+        <section class="card-deck">
+          <div class="card text-center">
+            <img class="card-img-top" src="img/img_crud.png" alt="Imagem de capa do card">
+            <div class="card-body">
+              <h5 class="card-title">Crud com PHP</h5>
+              <p class="card-text">Projeto em PHP, com tela de login, niveis de usuarios, CRUD e sessões.</p>
+              <p class="card-text"><small class="text-footer">HTML, CSS, JQUERY, BOOTSTRAP, PHP E MYSQL</small></p>
+            </div>
+            <div class="card__link">
+              <h3>Repositório</h3>
+              <a href="https://github.com/juliomarques56/crud-php" target="__blank" class="btn__pattern"><i class="fab fa-github" aria-hidden="true"></i>Acessar</a>
+            </div>
+          </div>
 
-              <div class="card text-center">
-                <img class="card-img-top" src="img/img_busca_empresa.png" alt="Busca empresa com PHP">
-                <div class="card-body">
-                  <h5 class="card-title">Busca empresa com PHP</h5>
-                  <p class="card-text">Tela para buscar informações de empresas pelo seu CNPJ, consumindo um API para recuperar as informações e preencher os campos.</p>
-                  <p class="card-text"><small class="text-footer">HTML E PHP</small></p>
-                </div>
-                <div class="movie-poster-info">
-                  <h3>Repositório</h3>
-                  <a href="https://github.com/juliomarques56/pesquisar_empresa_php" target="__blank" class="card-btn-pattern"><i class="fab fa-github" aria-hidden="true"></i>Acessar</a>
-                </div>
-              </div>
+          <div class="card text-center">
+            <img class="card-img-top" src="img/img_busca_empresa.png" alt="Busca empresa com PHP">
+            <div class="card-body">
+              <h5 class="card-title">Busca empresa com PHP</h5>
+              <p class="card-text">Tela para buscar informações de empresas pelo seu CNPJ, consumindo um API para recuperar as informações e preencher os campos.</p>
+              <p class="card-text"><small class="text-footer">HTML E PHP</small></p>
+            </div>
+            <div class="card__link">
+              <h3>Repositório</h3>
+              <a href="https://github.com/juliomarques56/pesquisar_empresa_php" target="__blank" class="btn__pattern"><i class="fab fa-github" aria-hidden="true"></i>Acessar</a>
+            </div>
+          </div>
 
-              <div class="card text-center">
-                <img class="card-img-top" src="img/img_dataScience_python.png" alt="Exercício Data Science">
-                <div class="card-body">
-                  <h5 class="card-title">Exercício Data Science</h5>
-                  <p class="card-text">Análise exploratória em um dos mais famosos datasets para Machine Learning, o dataset iris.</p>
-                  <p class="card-text"><small class="text-footer">PYTHON</small></p>
-                </div>
-                <div class="movie-poster-info">
-                  <h3>Repositório</h3>
-                  <a href="https://github.com/juliomarques56/Exercicios_Data_science" target="__blank" class="card-btn-pattern"><i class="fab fa-github" aria-hidden="true"></i>Acessar</a>
-                </div>
-              </div>
+          <div class="card text-center">
+            <img class="card-img-top" src="img/img_dataScience_python.png" alt="Exercício Data Science">
+            <div class="card-body">
+              <h5 class="card-title">Exercício Data Science</h5>
+              <p class="card-text">Análise exploratória em um dos mais famosos datasets para Machine Learning, o dataset iris.</p>
+              <p class="card-text"><small class="text-footer">PYTHON</small></p>
+            </div>
+            <div class="card__link">
+              <h3>Repositório</h3>
+              <a href="https://github.com/juliomarques56/Exercicios_Data_science" target="__blank" class="btn__pattern"><i class="fab fa-github" aria-hidden="true"></i>Acessar</a>
+            </div>
+          </div>
 
-              <div class="card text-center">
-                <img class="card-img-top" src="img/img_dataScience_python.png" alt="Exercício Data Science">
-                <div class="card-body">
-                  <h5 class="card-title">Exercício Data Science</h5>
-                  <p class="card-text">Análise exploratória em um dos mais famosos datasets para Machine Learning, o dataset iris.</p>
-                  <p class="card-text"><small class="text-footer">PYTHON</small></p>
-                </div>
-                <div class="movie-poster-info">
-                  <h3>Repositório</h3>
-                  <a href="https://github.com/juliomarques56/maratonaDev-projetoDoeSangue" target="__blank" class="card-btn-pattern"><i class="fab fa-github" aria-hidden="true"></i>Acessar</a>
-                </div>
-                <div>
-                  
-                </div>
-              </div>
-          </section>
+          <div class="card text-center">
+            <img class="card-img-top" src="img/img_dataScience_python.png" alt="Exercício Data Science">
+            <div class="card-body">
+              <h5 class="card-title">Exercício Data Science</h5>
+              <p class="card-text">Análise exploratória em um dos mais famosos datasets para Machine Learning, o dataset iris.</p>
+              <p class="card-text"><small class="text-footer">PYTHON</small></p>
+            </div>
+            <div class="card__link">
+              <h3>Repositório</h3>
+              <a href="https://github.com/juliomarques56/maratonaDev-projetoDoeSangue" target="__blank" class="btn__pattern"><i class="fab fa-github" aria-hidden="true"></i>Acessar</a>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
 
-    <div id="contact" class="contact-container">
-      <h1 class="section-title-left">Contato</h1>
+    <div id="contact" class="contact__container">
+      <h1 class="section__title--left">Contato</h1>
       <section class="form">
         <form>
           <div class="form-group">
@@ -221,7 +220,7 @@
             <textarea class="form-control" id="message" name="message" placeholder="Digite sua mensagem" rows="5"></textarea>
           </div>
           <div class="form-btn">
-            <button type="submit" class="card-btn-pattern">Enviar</button>
+            <button type="submit" class="btn__pattern">Enviar</button>
           </div>
         </form>
       </section>
@@ -230,16 +229,16 @@
 
   <span class="backtop"><i class="fas fa-arrow-up"></i></span>
  
-  <section class="social-container">
-    <section class="social">
-        <a href="https://github.com/juliomarques56"  target="__blank" title="Github" class=""><i class="fab fa-github" aria-hidden="true"></i></a>
-        <a href="https://www.facebook.com/jota56"  target="__blank" title="Facebook" class="facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/julio-marques-2772a6b2/"  target="__blank" title="Linkedin" class="linkedin "><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-        <a href="https://www.instagram.com/julio_marques56/?hl=pt-br"  target="__blank" title="Instagram" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-    </section> 
+  <section class="social__container">
+    <div class="social__link">
+      <a href="https://github.com/juliomarques56"  target="__blank" title="Github" class=""><i class="fab fa-github" aria-hidden="true"></i></a>
+      <a href="https://www.facebook.com/jota56"  target="__blank" title="Facebook" class="facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/julio-marques-2772a6b2/"  target="__blank" title="Linkedin" class="linkedin "><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/julio_marques56/?hl=pt-br"  target="__blank" title="Instagram" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+    </div> 
   </section> 
 
-  <footer class="footer-container">
+  <footer class="footer__container">
     <p>&copy; Copyright 2020. Júlio Marques </p>
   </footer>
 

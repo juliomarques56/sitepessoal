@@ -1,6 +1,5 @@
 const toggler = document.querySelector('.menu__toggler');
 const menu    = document.querySelector('.menu');
-//const link    = document.querySelectorAll('.link')
 
 toggler.addEventListener('click', () => {
   toggler.classList.toggle('active');
