@@ -1,0 +1,24 @@
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <switch transform="matrix(1.7777778837415923,0,0,1.7777778837415923,0,0) ">
+   <foreignObject id="svg_4" height="1" width="1" y="0" x="0"/>
+   <g id="svg_5">
+    <g id="svg_6">
+     <path id="svg_7" d="m50,36.7c1.6,0 3.1,-0.6 4.2,-1.7l22.3,-22.3c2.3,-2.3 2.3,-6.1 0,-8.4c-2.3,-2.3 -6.1,-2.3 -8.4,0l-18,18l-18,-18c-2.3,-2.3 -6.1,-2.3 -8.4,0c-1.2,1.2 -1.7,2.7 -1.7,4.2c0,1.5 0.6,3.1 1.7,4.2l22.1,22.3c1.1,1.1 2.6,1.7 4.2,1.7z"/>
+     <path id="svg_8" d="m54.2,65.4l22.3,-22.3c2.3,-2.3 2.3,-6.1 0,-8.4c-2.3,-2.3 -6.1,-2.3 -8.4,0l-18,18l-18,-18c-2.3,-2.3 -6.1,-2.3 -8.4,0c-1.2,1.2 -1.7,2.7 -1.7,4.2c0,1.5 0.6,3.1 1.7,4.2l22.3,22.3c2.1,2.3 5.9,2.3 8.2,0z"/>
+     <path id="svg_9" d="m54.2,95.8l22.3,-22.3c2.3,-2.3 2.3,-6.1 0,-8.4c-2.3,-2.3 -6.1,-2.3 -8.4,0l-18,18l-18.1,-18.1c-2.3,-2.3 -6.1,-2.3 -8.4,0c-1.2,1.2 -1.7,2.7 -1.7,4.2s0.6,3.1 1.7,4.2l22.3,22.3c2.2,2.4 6,2.4 8.3,0.1z"/>
+    </g>
+   </g>
+  </switch>
+ </g>
+</svg>

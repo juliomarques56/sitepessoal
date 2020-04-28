@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/963d9be9b3.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="src/css/normalize.css">
     <link rel="stylesheet" href="src/css/bootstrap.css">
@@ -24,7 +25,14 @@
         <a class="menu__link" href="#skill">Habilidades</a>
         <a class="menu__link" href="#project">Projetos</a>
         <a class="menu__link" href="#contact">Contato</a>
+        <div class="social__link--menu">
+          <a href="https://github.com/juliomarques56"  target="__blank" title="Github" class=""><i class="fab fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/jota56"  target="__blank" title="Facebook" class="facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/julio-marques-2772a6b2/"  target="__blank" title="Linkedin" class="linkedin "><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/julio_marques56/?hl=pt-br"  target="__blank" title="Instagram" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        </div> 
       </div>
+      
       <div class="menu__toggler "><span></span></div>
     </nav>
   </header>
@@ -32,25 +40,27 @@
   <main>
     <div id="home" class="home">
       <div class="home__container">
-        <div class="home__text">
+        <div class="home__text" data-aos="fade-right">
           <h1>
             <span>Olá!</span>
             <br>
-            <span>Eu sou Júlio</span>
-            <br>
-            <span>Dev Front-end</span>
+            <span class="span">Meu nome é Júlio</span>
+            <span class="span p">Dev Front-end</span>
           </h1>
           <p>CSS / JavaScript / React</p>
           <a href="#contact" class="btn-pattern">contate me</a>
         </div>
-        <div class="home__profileImage">
-          <img src="img/photo_perfil1.jpg" alt="">
-        </div>
+        <img class="img__home" src="./img/noun_code_2086374.svg" data-aos="fade-left" alt="">
+      </div>
+      <div class="arrow " >
+        <img src="./img/arrow.svg" data-aos="fade-up" alt="">
       </div>
     </div>
 
     <div id="about" class="about__container">
-      <h1 class="section__title--right">Sobre mim</h1>
+      <div data-aos="fade-right">
+        <h1 class="section__title--right" >Sobre mim</h1>
+      </div>
       <div class="about__content">
         <h2>Olá!</h2>
         <p>Meu nome é Júlio Marques, casado, finalizando graduação em Análise e Desenvolvimento de Sistemas. Atualmente moro em Manaus-AM, mas,
@@ -66,8 +76,14 @@
     </div>
 
     <div id="skill" class="skill__container">
-      <h1 class="section__title--left">Skills</h1>
+      <div data-aos="fade-left">
+        <h1 class="section__title--left" >Skills</h1>
+      </div>
+      
       <div class="skill__section">
+        <div class="skill__tag">
+          <img class="img__skills" src="./img/skills.svg" alt="">
+        </div>
         <div class="skill__tag">
           <span>HTML</span>
           <span>CSS</span>
@@ -86,11 +102,14 @@
           <span>FireBird</span>
           <span>Scrum</span>
         </div>
+       
       </div>
     </div>
 
     <div id="project" class="project__container">
-      <h1 class="section__title--right">Projetos</h1>
+      <div data-aos="fade-right">
+        <h1 class="section__title--right">Projetos</h1>
+      </div>
       <div class="project__section">
         <section class="card-deck ">
           <div class="card text-center">
@@ -203,7 +222,9 @@
     </div>
 
     <div id="contact" class="contact__container">
-      <h1 class="section__title--left">Contato</h1>
+      <div data-aos="fade-left">
+        <h1 class="section__title--left">Contato</h1>
+      </div>
       <section class="form">
         <form>
           <div class="form-group">
@@ -223,6 +244,9 @@
             <button type="submit" class="btn__pattern">Enviar</button>
           </div>
         </form>
+        <div>
+          <img class="img__contact" src="./img/contact.svg" alt="">
+        </div>
       </section>
     </div>
   </main>
@@ -242,6 +266,10 @@
     <p>&copy; Copyright 2020. Júlio Marques </p>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="src/js/script.js"></script>
+  <script>
+    AOS.init({easing:"ease-out-back",duration:1200,delay:200});
+  </script>
 </body>
 </html>
