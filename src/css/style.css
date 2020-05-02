@@ -92,7 +92,7 @@ p {
           clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
   width: 30%;
   height: 100%;
-  padding: 110px;
+  padding: 100px;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -559,7 +559,7 @@ nav .menu__toggler.active > span::after {
   .menu {
     width: 250px;
     left: -250px;
-    padding: 0 0 133px 63px;
+    padding: 50px;
   }
  
 }
