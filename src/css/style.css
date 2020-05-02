@@ -72,7 +72,7 @@ p {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 10%;
+  bottom: 0;
 }
 
 
@@ -92,7 +92,7 @@ p {
           clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
   width: 30%;
   height: 100%;
-  padding: 100px;
+  padding: 110px;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -567,7 +567,7 @@ nav .menu__toggler.active > span::after {
 @media all and (max-width: 568px) {
  
   .home {
-    height: 70vh;
+    height: 80vh;
     margin-bottom: 20px;
     padding: 0;
   }
