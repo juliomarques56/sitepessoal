@@ -23,8 +23,7 @@ function BackTop() {
     useEffect(() => {
         window.onscroll = () => handleScroll()
     
-        return ;
-    }, [])
+    },)
     
    
     return(
