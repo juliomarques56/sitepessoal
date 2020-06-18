@@ -1,5 +1,4 @@
 import React from "react";
-import AOS from 'aos';
 import imgContact from '../../assets/img/contact.svg';
 import './Contact.scss';
 
