@@ -1,0 +1,28 @@
+.about__container {
+  width: 100%;
+  height: 100%;
+}
+
+.about__content {
+  padding: 50px;
+  text-align: justify;
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: #21272b;
+}
+
+.about__content h2 {
+  color: rgb(228, 228, 228);
+}
+
+.about__content p {
+  margin: 0 0 24px;
+  font-size: 1.1rem;
+  color: rgb(228, 228, 228);
+}
+  
+@media all and (max-width: 568px) {
+  .about__content {
+    padding: 20px;
+  }
+}

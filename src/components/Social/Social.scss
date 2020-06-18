@@ -1,0 +1,52 @@
+.social__container {
+    position: fixed;
+    display: flex;
+    right: 4%;
+    top:115px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.social__link a {
+    width: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    transition: 0.5s;
+    color: #219fda;
+}
+
+.botton__line,
+.top__line {
+    width: 2px;
+    height: 80px;
+    background-color: #fff;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+    background: #ff9902;
+}
+
+.botton__line {
+    margin-top: 20px;
+}
+
+.social__link a:hover {
+    color: #fff;
+    transition: 0.2s;
+}
+
+.social__link a i {
+    font-size: 1.3em;
+    padding-top: 12px; 
+}
+
+@media all and (max-width: 568px) {
+    .social__container {
+        display: none;
+    }
+}

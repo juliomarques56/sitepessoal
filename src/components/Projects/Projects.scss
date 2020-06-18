@@ -1,0 +1,129 @@
+.project__container {
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.project__container .project__section {
+    margin-top: 30px;
+    max-width: 80%;
+    margin: 30px auto;
+}
+
+.card-deck {
+    width: 100%;
+    padding: 3px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+.card-title,
+.card-text {
+    color: rgb(228, 228, 228);
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    font-size: .9rem;
+}
+
+.card-text .text-footer {
+    color: #ff9902;
+    font-size: .6rem;
+    font-weight: bold;
+}
+
+.card {
+    background-color: #21272b;
+    border: 1px solid rgba(255, 255, 255, 0.253);
+    padding: 5px;
+    margin: 5px;
+    width: 24%;
+    position: relative;
+    text-decoration: none;
+    text-transform: none;
+    border-radius: 8px;
+}
+
+.card-img-top {
+    width: 100%;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    text-align: center;
+}
+.card__link {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.651);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    padding: 80px 20px;
+    text-align: center;
+    top: 0;
+    z-index: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover .card__link {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card__link h3 {
+    color: #fff;
+    font-size: 1.7em;
+    line-height: 1em;
+}
+
+.card__link .btn__pattern,
+.form-btn .btn__pattern {
+    padding: 12px 25px;
+    background: #ff9902;
+    color: #fff;
+    font-size: .9rem;
+    border-radius: 5px;
+    letter-spacing: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: .2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn__pattern:hover {
+    background: #eb8d02;
+}
+
+.btn__pattern i {
+    position: absolute;
+    font-size: 1.5em;
+    top: 12px;
+    right: 0px;
+}
+
+@media all and (max-width: 568px) {
+    .card {
+        width: 100%;
+        
+    }
+}
+@media all and (max-width: 1160px) {
+    .card {
+        
+        min-width: 250px;
+    }
+}
