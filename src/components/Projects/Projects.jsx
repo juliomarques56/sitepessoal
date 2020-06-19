@@ -20,7 +20,7 @@ function Projects() {
                 <section className="card-deck ">
                     {projects.map(project =>
                         <div className="card text-center">
-                            <img className="card-img-top" src={project.image} alt="Mitros Tecnologia"></img>
+                            <img className="card-img-top" src={project.image} alt={project.name}></img>
                             <div className="card-body">
                                 <h5 className="card-title">{project.name}</h5>
                                 <p className="card-text">{project.description}</p>
