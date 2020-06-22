@@ -7,7 +7,6 @@ import About from './components/About';
 import Skill from './components/Skill';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import Social from './components/Social';
 import BackTop from './components/BackTop';
 import Footer from './components/Footer';
 
