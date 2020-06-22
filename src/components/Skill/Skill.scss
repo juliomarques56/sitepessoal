@@ -14,15 +14,19 @@
     background-color: #21272b;
 }
 
-.skill__tag {
+.skill__tag--img {
     display: flex;
-    flex-direction: column;
+}
+.skill__tag {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
+    column-gap: 0;
 }
 
 .skill__tag span {
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,4 +42,11 @@
 
 .img__skills {
     width: 200px;
+}
+
+@media all and (max-width: 568px) {
+    .skill__tag {
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
 }

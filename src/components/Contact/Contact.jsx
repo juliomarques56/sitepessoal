@@ -1,6 +1,6 @@
 import React from "react";
-import AOS from 'aos';
 import imgContact from '../../assets/img/contact.svg';
+import Social from '../Social';
 import './Contact.scss';
 
 function Contact() {
@@ -14,6 +14,7 @@ function Contact() {
                 <div className="link__contact">
                     <a className="link__contact--email" href="maito:jotamarques56@gmail.com">jotamarques56@gmail.com</a>
                     <a className="btn-pattern" href="https://api.whatsapp.com/send?phone=5592991714126">Whatsapp</a>
+                    <Social/>
                 </div>
                 <div>
                     <img className="img__contact" src={imgContact} alt="Imagem contact"></img>

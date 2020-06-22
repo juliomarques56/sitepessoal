@@ -28,7 +28,7 @@ function App() {
       <Skill/>
       <Projects />
       <Contact/>
-      <Social/>
+  
       <BackTop/>
       <Footer/>
     </div>

@@ -13,7 +13,8 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    display: block;
+    display: flex;
+    justify-content: space-around;
     transition: 0.5s;
     color: #219fda;
 }
@@ -40,13 +41,26 @@
     transition: 0.2s;
 }
 
-.social__link a i {
-    font-size: 1.3em;
+.social__link a .fa-icons {
+    font-size: 2.1rem;
     padding-top: 12px; 
+}
+.social__link :nth-child(5) {
+    padding-bottom: 10px;
 }
 
 @media all and (max-width: 568px) {
     .social__container {
+        width: 100%;
+        position: initial;
+    }
+    .social__link {
+        width: 55%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .botton__line,
+    .top__line {
         display: none;
     }
 }

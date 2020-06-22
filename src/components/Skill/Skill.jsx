@@ -11,7 +11,7 @@ function Skill() {
                 <h1 className="section__title--left" >Skills</h1>
             </div>
             <div className="skill__section">
-                <div className="skill__tag">
+                <div className="skill__tag--img">
                     <img className="img__skills" src={imgSkill} alt=" Imagem Skill"></img>
                 </div>
                 <div className="skill__tag">
@@ -19,20 +19,15 @@ function Skill() {
                     <span>CSS</span>
                     <span>JavaScript</span>
                     <span>PHP</span>
-                </div>
-                <div className="skill__tag">
                     <span>Python</span>
                     <span>bootstrap</span>
                     <span>Git</span>
                     <span>MySQL</span>
-                </div>
-                <div className="skill__tag">
                     <span>PostgreSQL</span>
                     <span>SQLServer</span>
                     <span>FireBird</span>
                     <span>Scrum</span>
                 </div>
-            
             </div>
         </div>
     )
