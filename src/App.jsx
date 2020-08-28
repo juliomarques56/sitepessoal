@@ -4,7 +4,7 @@ import AOS from 'aos';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
-import Skill from './components/Skill';
+import Skill from './components/Skilln';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import BackTop from './components/BackTop';
@@ -15,7 +15,7 @@ function App() {
 
 
   AOS.init(
-    {easing:"ease-out-back",duration:1200,delay:200}
+    {easing:"ease-out-back",duration:1200,delay:100}
   );
   
   return (

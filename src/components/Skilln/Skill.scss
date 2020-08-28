@@ -1,0 +1,59 @@
+.skill__container {
+    width: 100%;
+    padding: 20px;
+}
+
+.skill__section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #21272b;
+}
+
+.tag {
+    display: inline;
+    
+}
+
+.skill__tag--dev {
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.tag__title {
+    margin-bottom: 5px;
+}
+
+.icons {
+    font-size: 40px;
+    color: #ff9902;
+}
+
+.fa-icon {
+    margin: 0.2rem;
+}
+
+.m-left {
+    margin-left: 1rem;
+}
+
+.tag-ul {
+    font-size: 15px;
+    list-style-type: none;
+}
+
+.tag li {
+    font-size: 1rem;
+}
+
+.fa__icon--check {
+    color: #ff9902;
+    font-size: 1rem;
+    margin-right: 0.3rem;
+}
+
+

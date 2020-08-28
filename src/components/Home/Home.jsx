@@ -13,13 +13,11 @@ function Home() {
             <div className="home__container">
                 <div className="home__text" data-aos="fade-right">
                     <h1>
-                        <span>Olá!</span>
-                        <br/>
-                        <span className="span">Meu nome é Júlio</span>
-                        <span className="span p">Dev Front-end</span>
+                        <span className="span">Júlio Marques</span>
                     </h1>
-                    <p>CSS / JavaScript / React</p>
+                    <p>Desenvolvedor de teste / Desenvolvedor Fron-end</p>
                     <Link to="contact" className="btn-pattern" smooth={true} duration={1000}>contate me</Link>
+                    <a href="../../assets/curriculo/julio-curriculo.pdf" download target="_blank" className="btn-pattern" duration={1000}>Curriculo</a>
                 </div>
                 <img className="img__home" src={imgCodeHome}  alt="Imagem home" data-aos="fade-left"></img>
             </div>
