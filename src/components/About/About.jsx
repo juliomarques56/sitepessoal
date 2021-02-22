@@ -11,8 +11,6 @@ function About() {
             </div>
             <div className="about__content">
                 <h2>Olá!</h2>
-                <p>Meu nome é Júlio Marques, casado, finalizando graduação em Análise e Desenvolvimento de Sistemas
-                </p>
                 <p>
                     Meu nome é Júlio Marques, casado, com graduação em Análise e Desenvolvimento de Sistemas
                     Atualmente estou trabalhando na Rapport Soluções como autônomo em modelo home office. Presto suporte aos clientes do sistema, além de configurar, testar e homologar funcionalidades novas e atuais, investigar, analisar e resolver problemas referente ao sistema.
