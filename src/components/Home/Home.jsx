@@ -15,7 +15,7 @@ function Home() {
                     <h1>
                         <span className="span">Júlio Marques</span>
                     </h1>
-                    <p>Analista de teste / Desenvolvedor Fron-end</p>
+                    <p>Analista de teste/QA</p>
                     <Link to="contact" className="btn-pattern" smooth={true} duration={1000}>contate me</Link>
                     <a href="../../assets/curriculo/julio-curriculo.pdf" download target="_blank" className="btn-pattern" duration={1000}>Curriculo</a>
                 </div>
